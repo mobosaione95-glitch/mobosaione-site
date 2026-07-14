@@ -1,1 +1,1 @@
-# mobosaione-site
+Upload to GitHub Pages.

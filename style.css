@@ -1,0 +1,6 @@
+body{font-family:tahoma;background:#fff;margin:0}
+header{background:#0b1220;color:#fff;text-align:center;padding:25px}
+.hero{margin:20px;border-radius:24px;padding:40px;background:linear-gradient(135deg,#111,#0b5cff);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:20px}
+.card{background:#fff;border:2px solid #dbe4ff;border-radius:18px;padding:30px;text-align:center;box-shadow:0 2px 8px #ddd}
+footer{text-align:center;padding:20px}
