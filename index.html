@@ -1,39 +1,62 @@
-<!DOCTYPE html><html lang="fa" dir="rtl"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>فروشگاه سایوان</title><link rel="stylesheet" href="style.css"></head>
-<body><header><h1>فروشگاه سایوان</h1><p>فروش انواع موبایل و لوازم جانبی</p></header>
-<section class='hero'><h2>قیمت روز گوشی‌ها</h2><p>قیمت روز گوشی موبایل تاریخ 1405/04/28.</p></section>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فروشگاه سایوان</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>فروشگاه سایوان</h1>
+<p>فروش انواع موبایل و لوازم جانبی</p>
+</header>
+
+<section class="hero">
+<h2>قیمت روز گوشی‌ها</h2>
+<p>قیمت روز گوشی موبایل - 1405/04/28</p>
+</section>
+
 <img src="Untitled4.png" style="width:100%;border-radius:20px;">
-  <section class='grid'>
-<footer>اینستاگرام مارا دنبال کنید ©Mobo-Saione</footer></body></html>
-<footer>شماره تماس جهت پیگیری   09134455061*09134455069*09140352612</footer></body></html>
+
+<br><br>
+
+<div class="form-box">
+
 <h2>ثبت درخواست تعمیر</h2>
 
-<input type="text" id="name" placeholder="نام و نام خانوادگی"><br><br>
+<input type="text" id="name" placeholder="👤 نام و نام خانوادگی">
 
-<input type="text" id="phone" placeholder="شماره تماس"><br><br>
+<input type="text" id="phone" placeholder="📞 شماره تماس">
 
-<input type="text" id="model" placeholder="مدل گوشی"><br><br>
+<input type="text" id="model" placeholder="📱 مدل گوشی">
 
-<textarea id="problem" placeholder="مشکل گوشی را بنویسید"></textarea><br><br>
+<textarea id="problem" rows="5" placeholder="🔧 مشکل گوشی را بنویسید..."></textarea>
 
-<button onclick="sendWhatsApp()">ارسال درخواست</button>
+<button class="whatsapp-btn" onclick="sendWhatsApp()">
+ارسال درخواست در واتساپ
+</button>
+
+</div>
+
+<footer>
+<p>اینستاگرام ما را دنبال کنید | Mobo-Saione</p>
+<p>09134455061 | 09134455069 | 09140352612</p>
+</footer>
 
 <script>
-function sendWhatsApp() {
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var model = document.getElementById("model").value;
-  var problem = document.getElementById("problem").value;
+function sendWhatsApp(){
 
-  var message =
-سلام، درخواست تعمیر دارم.
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let model=document.getElementById("model").value;
+let problem=document.getElementById("problem").value;
+
+let message=`سلام، درخواست تعمیر دارم.
 
 👤 نام: ${name}
-📞 شماره: ${phone}
-📱 مدل گوشی: ${model}
-🔧 مشکل: ${problem};
 
-  window.open("https://wa.me/989140352612?text=" + encodeURIComponent(message), "_blank");
-}
-</script>
+📞
