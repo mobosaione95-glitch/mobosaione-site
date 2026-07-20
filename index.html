@@ -7,3 +7,33 @@
   <section class='grid'>
 <footer>اینستاگرام مارا دنبال کنید ©Mobo-Saione</footer></body></html>
 <footer>شماره تماس جهت پیگیری   09134455061*09134455069*09140352612</footer></body></html>
+<h2>ثبت درخواست تعمیر</h2>
+
+<input type="text" id="name" placeholder="نام و نام خانوادگی"><br><br>
+
+<input type="text" id="phone" placeholder="شماره تماس"><br><br>
+
+<input type="text" id="model" placeholder="مدل گوشی"><br><br>
+
+<textarea id="problem" placeholder="مشکل گوشی را بنویسید"></textarea><br><br>
+
+<button onclick="sendWhatsApp()">ارسال درخواست</button>
+
+<script>
+function sendWhatsApp() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var model = document.getElementById("model").value;
+  var problem = document.getElementById("problem").value;
+
+  var message =
+سلام، درخواست تعمیر دارم.
+
+👤 نام: ${name}
+📞 شماره: ${phone}
+📱 مدل گوشی: ${model}
+🔧 مشکل: ${problem};
+
+  window.open("https://wa.me/989140352612?text=" + encodeURIComponent(message), "_blank");
+}
+</script>
