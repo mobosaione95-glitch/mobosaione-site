@@ -473,7 +473,7 @@ backdrop-filter:blur(20px);
 
 border-radius:30px;
 
-border:1px solid rgba(255,255,255,.15);
+border:1px solid red(255,255,255,.15);
 
 transition:.4s;
 
