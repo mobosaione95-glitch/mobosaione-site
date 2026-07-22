@@ -1,243 +1,53 @@
-/* ===== Mobile Saione Pro ===== */
+/* ===== اصلاحات نهایی موبایل سایوان ===== */
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Vazirmatn',sans-serif;
-scroll-behavior:smooth;
-}
 
-
-body{
-
-background:#0d1117;
-
-color:#fff;
-
-overflow-x:hidden;
-
-}
-
-
-/* پس زمینه متحرک */
-
-body::before{
-
-content:"";
-
-position:fixed;
-
-width:700px;
-
-height:700px;
-
-background:radial-gradient(circle,#1565ff55,transparent 70%);
-
-top:-200px;
-
-left:-200px;
-
-z-index:-2;
-
-animation:move1 12s infinite alternate;
-
-}
-
-
-
-body::after{
-
-content:"";
-
-position:fixed;
-
-width:600px;
-
-height:600px;
-
-background:radial-gradient(circle,#ff008855,transparent 70%);
-
-bottom:-200px;
-
-right:-200px;
-
-z-index:-2;
-
-animation:move2 14s infinite alternate;
-
-}
-
-
-
-@keyframes move1{
-
-to{
-
-transform:translate(120px,80px);
-
-}
-
-}
-
-
-
-@keyframes move2{
-
-to{
-
-transform:translate(-100px,-80px);
-
-}
-
-}
-
-
-
-/* ===== منو ===== */
-
-
-.navbar{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:15px 8%;
-
-position:fixed;
-
-top:0;
-
-width:100%;
-
-background:rgba(10,10,20,.55);
-
-backdrop-filter:blur(18px);
-
-z-index:999;
-
-}
-
-
-
+/* لوگو */
 
 .logo img{
 
-width:55px;
+width:45px;
 
-height:55px;
+height:45px;
 
 object-fit:contain;
 
-}
-
-
-
-
-
-.navbar ul{
-
-display:flex;
-
-list-style:none;
-
-gap:30px;
+border-radius:12px;
 
 }
 
 
 
-.navbar a{
+/* عکس قیمت */
 
-color:#fff;
+.prices img{
 
-text-decoration:none;
+width:100%;
 
-transition:.3s;
+max-width:1200px;
 
-font-weight:600;
+height:auto;
 
-}
+display:block;
 
+margin:25px auto 0;
 
+border-radius:25px;
 
-.navbar a:hover{
+object-fit:contain;
 
-color:#39b7ff;
-
-}
-
-
-
-/* ===== هیرو ===== */
-
-
-.hero{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-padding:150px 8% 80px;
-
-gap:40px;
+box-shadow:0 15px 40px rgba(0,0,0,.35);
 
 }
 
 
 
-.hero-text{
-
-flex:1;
-
-}
-
-
-
-.hero-text h1{
-
-font-size:58px;
-
-line-height:1.3;
-
-margin-bottom:20px;
-
-}
-
-
-
-.hero-text p{
-
-font-size:22px;
-
-opacity:.9;
-
-margin-bottom:35px;
-
-}
-
-
-
-.hero-image{
-
-flex:1;
-
-text-align:center;
-
-}
-
-
+/* عکس داخل هیرو */
 
 .hero-image img{
 
-width:90%;
+width:75%;
 
-max-width:550px;
+max-width:420px;
 
 animation:float 4s ease-in-out infinite;
 
@@ -247,459 +57,21 @@ filter:drop-shadow(0 20px 40px rgba(0,150,255,.45));
 
 
 
-
-@keyframes float{
-
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-
-50%{
-
-transform:translateY(-20px);
-
-}
-
-}
-
-
-
-
-.hero-buttons{
-
-display:flex;
-
-gap:20px;
-
-}
-
-
-
-.btn1,
-.btn2{
-
-padding:18px 35px;
-
-border-radius:18px;
-
-text-decoration:none;
-
-font-size:18px;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-
-
-.btn1{
-
-background:linear-gradient(135deg,#0b5cff,#00bfff);
-
-color:white;
-
-}
-
-
-
-.btn2{
-
-background:linear-gradient(135deg,#ff4b6e,#ff7b00);
-
-color:white;
-
-}
-
-
-
-
-.btn1:hover,
-.btn2:hover{
-
-transform:translateY(-5px) scale(1.03);
-
-box-shadow:0 15px 35px rgba(0,0,0,.35);
-
-}
-
-
-
-
-/* ===== قیمت محصولات ===== */
-
-
-.prices{
-
-width:92%;
-
-margin:70px auto;
-
-padding:35px;
-
-text-align:center;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(20px);
-
-border-radius:30px;
-
-border:1px solid rgba(255,255,255,.12);
-
-box-shadow:0 20px 50px rgba(0,0,0,.3);
-
-}
-
-
-
-.prices h2{
-
-font-size:40px;
-
-margin-bottom:20px;
-
-}
-
-
-
-.prices p{
-
-font-size:20px;
-
-line-height:2;
-
-margin-bottom:30px;
-
-}
-
-
-
-
-.prices img{
-
-width:100%;
-
-height:auto;
-
-display:block;
-
-border-radius:25px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.35);
-
-}
-
-
-
-
-/* ===== اسلایدر ===== */
-
-
-.slider{
-
-width:92%;
-
-margin:60px auto;
-
-position:relative;
-
-overflow:hidden;
-
-border-radius:30px;
-
-box-shadow:0 20px 60px rgba(0,0,0,.35);
-
-}
-
-
-
-.slide{
-
-display:none;
-
-position:relative;
-
-animation:fade 1s;
-
-}
-
-
-
-.slide.active{
-
-display:block;
-
-}
-
-
-
-.slide img{
-
-width:100%;
-
-height:520px;
-
-object-fit:cover;
-
-border-radius:30px;
-
-}
-
-
-
-
-.caption{
-
-position:absolute;
-
-bottom:50px;
-
-right:50px;
-
-background:rgba(0,0,0,.55);
-
-backdrop-filter:blur(15px);
-
-padding:25px;
-
-border-radius:20px;
-
-}
-
-
-
-.caption h2{
-
-font-size:42px;
-
-margin-bottom:10px;
-
-}
-
-
-
-.caption p{
-
-font-size:20px;
-
-}
-
-
-
-
-@keyframes fade{
-
-from{
-
-opacity:.2;
-
-transform:scale(1.05);
-
-}
-
-to{
-
-opacity:1;
-
-transform:scale(1);
-
-}
-
-}
-
-
-
-
-/* ===== برندها ===== */
-
-
-.brands{
-
-padding:90px 8%;
-
-text-align:center;
-
-}
-
-
-
-.brands h2{
-
-font-size:40px;
-
-margin-bottom:40px;
-
-}
-
-
-
-
-.brand-box{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-
-gap:20px;
-
-}
-
-
-
+/* برندها جمع و جور ولی شناور */
 
 .brand{
 
-padding:25px;
+padding:18px 22px;
 
-background:rgba(255,255,255,.06);
-
-border-radius:25px;
-
-backdrop-filter:blur(20px);
-
-font-size:22px;
-
-transition:.35s;
-
-border:1px solid rgba(255,255,255,.12);
+font-size:18px;
 
 }
 
 
 
-.brand:hover{
-
-transform:translateY(-10px);
-
-background:linear-gradient(135deg,#0b5cff,#9b00ff);
-
-}
-
-
-
-
-/* ===== خدمات ===== */
-
-
-.services{
-
-padding:80px 8%;
-
-}
-
-
-
-.services h2{
-
-text-align:center;
-
-font-size:42px;
-
-margin-bottom:40px;
-
-}
-
-
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:25px;
-
-}
-
-
-
-.card{
-
-padding:35px;
-
-border-radius:28px;
-
-background:rgba(255,255,255,.07);
-
-backdrop-filter:blur(20px);
-
-text-align:center;
-
-transition:.35s;
-
-border:1px solid rgba(255,255,255,.12);
-
-font-size:45px;
-
-}
-
-
-
-.card h3{
-
-margin-top:20px;
-
-font-size:24px;
-
-}
-
-
-
-.card p{
-
-font-size:15px;
-
-color:#ddd;
-
-line-height:1.8;
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-12px) rotate(-1deg);
-
-box-shadow:0 20px 40px rgba(0,140,255,.25);
-
-}
-/* ===== تعمیرات ===== */
-
-.repair{
-
-padding:90px 8%;
-
-text-align:center;
-
-}
-
-
-
-.repair h2{
-
-font-size:42px;
-
-margin-bottom:40px;
-
-}
-
-
-
+/* تعمیرات حرفه‌ای */
 
 .repair-box{
-
-max-width:900px;
-
-margin:auto;
-
-padding:40px;
 
 background:rgba(255,255,255,.08);
 
@@ -707,24 +79,11 @@ backdrop-filter:blur(20px);
 
 border-radius:30px;
 
-border:1px solid rgba(255,255,255,.12);
+padding:45px;
 
-box-shadow:0 20px 50px rgba(0,0,0,.3);
+border:1px solid rgba(255,255,255,.15);
 
-}
-
-
-
-
-.repair-text p{
-
-font-size:18px;
-
-line-height:2.2;
-
-color:#ddd;
-
-margin:20px 0;
+box-shadow:0 20px 50px rgba(0,0,0,.35);
 
 }
 
@@ -732,393 +91,76 @@ margin:20px 0;
 
 .repair-text li{
 
-list-style:none;
+background:rgba(0,120,255,.12);
 
-background:rgba(255,255,255,.07);
-
-padding:12px;
+padding:14px;
 
 margin:12px 0;
 
 border-radius:15px;
 
-color:#fff;
-
-}
-
-
-
-.btn-repair{
-
-display:inline-block;
-
-margin-top:25px;
-
-padding:18px 45px;
-
-background:linear-gradient(135deg,#1565ff,#00c6ff);
-
-color:#fff;
-
-text-decoration:none;
-
-font-size:20px;
-
-font-weight:bold;
-
-border-radius:18px;
-
 transition:.3s;
 
 }
 
 
 
-.btn-repair:hover{
+.repair-text li:hover{
 
-transform:translateY(-5px);
+transform:translateX(-8px);
 
-box-shadow:0 15px 35px rgba(0,170,255,.35);
-
-}
-
-
-
-
-
-/* ===== اینستاگرام ===== */
-
-
-.instagram{
-
-margin:80px;
-
-padding:60px;
-
-text-align:center;
-
-border-radius:35px;
-
-background:linear-gradient(135deg,#833AB4,#C13584,#FD1D1D,#FCAF45);
+background:rgba(0,150,255,.25);
 
 }
 
 
 
-.instagram h2{
+/* کارت های خدمات کمی مرتب تر */
 
-font-size:42px;
+.card{
 
-margin-bottom:20px;
+padding:30px;
 
-}
-
-
-
-.instagram p{
-
-font-size:22px;
-
-margin-bottom:25px;
+font-size:40px;
 
 }
 
 
 
-.instagram a{
+.card:hover{
 
-display:inline-block;
-
-padding:18px 40px;
-
-background:white;
-
-color:#C13584;
-
-border-radius:18px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-font-size:20px;
-
-transition:.3s;
+transform:translateY(-10px);
 
 }
 
 
 
-.instagram a:hover{
-
-transform:scale(1.08);
-
-}
-
-
-
-
-
-/* ===== فوتر ===== */
-
-
-footer{
-
-margin-top:80px;
-
-padding:45px;
-
-background:#070b14;
-
-text-align:center;
-
-border-top:1px solid rgba(255,255,255,.08);
-
-}
-
-
-
-footer p{
-
-margin:10px 0;
-
-font-size:18px;
-
-color:#bbb;
-
-}
-
-
-
-
-
-/* ===== دکمه اینستاگرام شناور ===== */
-
-
-.float-insta{
-
-position:fixed;
-
-left:20px;
-
-bottom:20px;
-
-width:65px;
-
-height:65px;
-
-background:linear-gradient(135deg,#833AB4,#FD1D1D,#FCAF45);
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-color:#fff;
-
-font-size:30px;
-
-text-decoration:none;
-
-box-shadow:0 10px 30px rgba(0,0,0,.35);
-
-transition:.3s;
-
-z-index:999;
-
-}
-
-
-
-.float-insta:hover{
-
-transform:scale(1.12) rotate(10deg);
-
-}
-
-
-
-
-
-/* ===== دکمه بالا ===== */
-
-
-#topBtn{
-
-position:fixed;
-
-right:20px;
-
-bottom:20px;
-
-width:55px;
-
-height:55px;
-
-border:none;
-
-border-radius:50%;
-
-background:#1565ff;
-
-color:white;
-
-font-size:22px;
-
-cursor:pointer;
-
-display:none;
-
-box-shadow:0 10px 25px rgba(0,0,0,.35);
-
-}
-
-
-
-
-/* ===== موبایل ===== */
-
+/* موبایل */
 
 @media(max-width:768px){
 
+.logo img{
 
-.navbar{
+width:40px;
 
-flex-direction:column;
+height:40px;
+
+}
+
+
+.hero-image img{
+
+width:90%;
+
+}
+
+
+.brand{
 
 padding:15px;
-
-}
-
-
-
-.navbar ul{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:15px;
-
-margin-top:15px;
-
-}
-
-
-
-.hero{
-
-flex-direction:column;
-
-padding-top:120px;
-
-text-align:center;
-
-}
-
-
-
-.hero-text h1{
-
-font-size:36px;
-
-}
-
-
-
-.hero-text p{
-
-font-size:18px;
-
-}
-
-
-
-.hero-buttons{
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.slide img{
-
-height:260px;
-
-}
-
-
-
-.caption{
-
-right:20px;
-
-left:20px;
-
-bottom:20px;
-
-}
-
-
-
-.caption h2{
-
-font-size:26px;
-
-}
-
-
-
-.caption p{
 
 font-size:16px;
 
 }
-
-
-
-.brands h2,
-.services h2,
-.instagram h2,
-.repair h2{
-
-font-size:30px;
-
-}
-
-
-
-.instagram{
-
-margin:20px;
-
-padding:35px;
-
-}
-
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.logo img{
-
-width:50px;
-
-height:50px;
-
-}
-
 
 }
