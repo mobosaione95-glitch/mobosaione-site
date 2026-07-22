@@ -164,3 +164,223 @@ font-size:16px;
 }
 
 }
+/* ===== Fix Final Mobile Saione ===== */
+
+
+/* جلوگیری از کج شدن صفحه */
+
+html,
+body{
+
+width:100%;
+
+overflow-x:hidden;
+
+}
+
+
+
+/* اصلاح بخش قیمت */
+
+.prices{
+
+width:92%;
+
+margin:60px auto;
+
+padding:30px;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+border:1px solid rgba(255,255,255,.12);
+
+box-shadow:0 20px 50px rgba(0,0,0,.3);
+
+}
+
+
+
+
+.prices h2{
+
+color:white;
+
+}
+
+
+
+.prices p{
+
+color:#ddd;
+
+line-height:2;
+
+}
+
+
+
+.prices img{
+
+width:95%;
+
+max-width:900px;
+
+height:auto;
+
+margin:20px auto 0;
+
+display:block;
+
+border-radius:20px;
+
+object-fit:contain;
+
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+
+
+
+
+/* اصلاح تعمیرات */
+
+.repair-box{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+padding:45px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+.repair-text{
+
+color:white;
+
+}
+
+
+
+.repair-text h2{
+
+color:white;
+
+font-size:36px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.repair-text p{
+
+color:#ddd;
+
+font-size:18px;
+
+line-height:2;
+
+}
+
+
+
+.repair-text li{
+
+color:white;
+
+background:rgba(0,120,255,.15);
+
+padding:14px;
+
+margin:12px 0;
+
+border-radius:15px;
+
+}
+
+
+
+
+/* لوگو مرتب */
+
+.logo img{
+
+width:45px;
+
+height:45px;
+
+object-fit:contain;
+
+border-radius:12px;
+
+}
+
+
+
+
+/* جلوگیری از بیرون زدن عکس ها */
+
+img{
+
+max-width:100%;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.prices{
+
+width:94%;
+
+padding:20px;
+
+}
+
+
+.prices img{
+
+width:100%;
+
+}
+
+
+
+.repair-box{
+
+padding:25px;
+
+}
+
+
+
+.repair-text h2{
+
+font-size:28px;
+
+}
+
+
+}
