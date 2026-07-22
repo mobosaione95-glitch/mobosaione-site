@@ -226,5 +226,23 @@ font-size:24px;
 .whatsapp-btn{
 font-size:18px;
 }
+.whatsapp-btn{
+display:block;
+width:100%;
+padding:18px;
+border-radius:20px;
+background:linear-gradient(135deg,#1565ff,#33a1ff);
+color:white;
+text-align:center;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 12px 30px rgba(21,101,255,.3);
+}
 
+.whatsapp-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 20px 40px rgba(21,101,255,.4);
+}
 }
