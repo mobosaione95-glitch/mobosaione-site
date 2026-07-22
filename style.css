@@ -337,19 +337,33 @@ text-align:center;
 }
 
 
+
 .prices img{
 
-width:90%;
+width:100%;
 
-max-width:950px;
+max-width:1200px;
 
-margin-top:25px;
+height:auto;
 
-border-radius:25px;
+margin-top:35px;
+
+border-radius:30px;
+
+object-fit:contain;
+
+box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+transition:.4s;
 
 }
 
 
+.prices img:hover{
+
+transform:scale(1.03);
+
+}
 
 /* برندها */
 
