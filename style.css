@@ -632,7 +632,7 @@ font-size:15px;
 
 .btn-repair{
 
-background:linear-gradient(135deg,#0066ff,#00c6ff);
+background:linear-gradient(135deg,#00b248,#25D366);
 
 padding:15px 35px;
 
@@ -642,8 +642,22 @@ color:white;
 
 font-size:17px;
 
+font-weight:bold;
+
+box-shadow:0 12px 30px rgba(37,211,102,.35);
+
+transition:.3s;
+
 }
 
+
+.btn-repair:hover{
+
+transform:translateY(-5px) scale(1.03);
+
+box-shadow:0 18px 40px rgba(37,211,102,.5);
+
+}
 
 
 
