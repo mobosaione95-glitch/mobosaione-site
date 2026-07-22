@@ -67,10 +67,14 @@ backdrop-filter:blur(18px);
 z-index:999;
 }
 
-.logo{
-font-size:32px;
-font-weight:800;
-color:#fff;
+.logo img{
+
+width:70px;
+
+height:70px;
+
+object-fit:contain;
+
 }
 
 .navbar ul{
@@ -544,18 +548,68 @@ text-align:center;
 }
 
 
-.prices img{
+.repair-box{
 
-width:100%;
+background:white;
 
-height:auto;
+padding:35px;
 
-display:block;
+border-radius:30px;
 
-margin:auto;
+display:flex;
 
-object-fit:contain;
+align-items:center;
 
-border-radius:20px;
+gap:35px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+
+}
+
+
+.repair-text h2{
+
+font-size:32px;
+
+color:#0066ff;
+
+margin-bottom:15px;
+
+}
+
+
+.repair-text p{
+
+font-size:16px;
+
+line-height:2.2;
+
+color:#555;
+
+}
+
+
+.repair-text li{
+
+background:#f5f8ff;
+
+margin:10px 0;
+
+padding:10px 15px;
+
+border-radius:12px;
+
+list-style:none;
+
+}
+
+
+.repair-image img{
+
+width:380px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
 
 }
